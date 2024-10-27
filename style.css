@@ -1,1 +1,56 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
+
+:root {
+  --color-background: #dadbf8;
+  --color-main: #f9f4ff;
+}
+
+body {
+  background-color: var(--color-background);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  height: 60vh;
+  background-color: var(--color-main);
+  background-image: url("/images/main-wisteria.png");
+  background-repeat: no-repeat;
+  /* border: 1px solid red; */
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2 {
+  /* font-family: sans-serif; */
+}
+
+.summary {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  border: 2px solid green;
+}
+
+.summary p {
+  align-self: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  height: 266px;
+  background-color: var(--color-main);
+}
+
+.summary p:nth-of-type(2) {
+  order: -1;
+  width: 502px;
+  border: 2px solid blue;
+}
+
+.summary p:first-of-type {
+  width: 843px;
+  border: 2px solid red;
+}
