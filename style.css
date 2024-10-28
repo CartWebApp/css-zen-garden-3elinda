@@ -71,7 +71,7 @@ p {
   padding: 0;
   display: flex;
   position: absolute;
-  top: 951px;
+  top: 1006px;
 }
 
 .design-selection,
@@ -83,6 +83,7 @@ p {
   border-radius: 20px;
   /* margin-bottom: 10%; */
   margin: 10px;
+  padding: 20px;
   background-color: var(--color-main);
   /* border: 2px solid yellow; */
 }
@@ -100,9 +101,30 @@ p {
 
 #zen-supporting,
 .preamble {
-  /* background-color: var(--color-main); */
+  /* background-color: var(--color-main);
   width: 843px;
-  /* margin-top: 0px; */
+  margin-top: 0px;
+  border-top: 1px solid var(--color-main);
+  border: 2px solid green;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 720px;
+  background-color: var(--color-main);
+  border-radius: 20px; */
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  /* margin: 0 0 2px 226px; */
+  background-color: var(--color-main);
+  /* border-radius: 20px; */
+
+  width: 843px;
+  margin-top: 0px;
   border-top: 1px solid var(--color-main);
   border: 2px solid green;
   padding: 20px;
@@ -113,12 +135,29 @@ p {
   border-radius: 20px;
 }
 
-.preamble,
-.explaination,
-.participation,
-.benefits,
-.requirements {
-  /* margin: 0 0 2px 226px; */
-  background-color: var(--color-main);
-  /* border-radius: 20px; */
+.requirements p:nth-child(6) {
+ /* text-align: center; */
+ /* background-position: 0px top; */
+ /* display: block; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 1345px;
+ height: 263px;
+ /* margin: 0 0 0 -10px; */
+ /* padding: 25px 80px 0px 80px; */
+ border: 2px solid red;
+}
+
+footer {
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 660px;
+  height: 20px;
+  /* text-align: center; */
+  margin-top: 0;
+  margin-bottom: 0;
+  /* margin-left: 40%; */
 }
