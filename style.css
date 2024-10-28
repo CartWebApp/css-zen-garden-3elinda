@@ -27,6 +27,14 @@ h2 {
   /* font-family: sans-serif; */
 }
 
+h3 {
+  font-size: 37px;
+}
+
+p {
+  font-size: 30px;
+}
+
 .summary {
   display: flex;
   padding: 40px;
@@ -35,11 +43,11 @@ h2 {
 }
 
 .summary p {
-  align-self: center;
+  /* align-self: center; */
   margin: auto;
   padding: 20px;
   border-radius: 20px;
-  font-size: 30px;
+  /* font-size: 30px; */
   height: 266px;
   background-color: var(--color-main);
 }
@@ -53,4 +61,64 @@ h2 {
 .summary p:first-of-type {
   width: 843px;
   border: 2px solid red;
+}
+
+.sidebar {
+  border: 2px solid blue;
+  font-size: 28px;
+  /* width: 590px; */
+  margin-left: 5%;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 951px;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+  display: flex;
+  flex-direction: column;
+  width: 501px;
+  border-radius: 20px;
+  /* margin-bottom: 10%; */
+  margin: 10px;
+  background-color: var(--color-main);
+  /* border: 2px solid yellow; */
+}
+
+/* .preamble {
+  border: 2px solid orange;
+  margin-bottom: 0px;
+
+  width: 843px;
+  background-color: var(--color-main);
+  border-bottom: 1px solid var(--color-main);
+  padding: 20px;
+  margin-left: 710px;
+} */
+
+#zen-supporting,
+.preamble {
+  /* background-color: var(--color-main); */
+  width: 843px;
+  /* margin-top: 0px; */
+  border-top: 1px solid var(--color-main);
+  border: 2px solid green;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 720px;
+  background-color: var(--color-main);
+  border-radius: 20px;
+}
+
+.preamble,
+.explaination,
+.participation,
+.benefits,
+.requirements {
+  /* margin: 0 0 2px 226px; */
+  background-color: var(--color-main);
+  /* border-radius: 20px; */
 }
