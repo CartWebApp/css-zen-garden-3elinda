@@ -23,9 +23,9 @@ h1 {
   font-family: "Courier New", Courier, monospace;
 }
 
-h2 {
-  /* font-family: sans-serif; */
-}
+/* h2 {
+  font-family: sans-serif;
+} */
 
 h3 {
   font-size: 37px;
@@ -35,11 +35,8 @@ p {
   font-size: 30px;
 }
 
-.summary {
-  display: flex;
-  padding: 40px;
-  justify-content: space-between;
-  border: 2px solid green;
+#zen-summary {
+  border: 2px solid red;
 }
 
 .summary p {
@@ -47,7 +44,7 @@ p {
   margin: auto;
   padding: 20px;
   border-radius: 20px;
-  /* font-size: 30px; */
+  font-size: 30px;
   height: 266px;
   background-color: var(--color-main);
 }
@@ -60,18 +57,26 @@ p {
 
 .summary p:first-of-type {
   width: 843px;
-  border: 2px solid red;
+  border: 2px solid green;
 }
 
 .sidebar {
   border: 2px solid blue;
   font-size: 28px;
-  /* width: 590px; */
-  margin-left: 5%;
-  padding: 0;
-  display: flex;
+  padding: 0px;
   position: absolute;
-  top: 1006px;
+  top: 910px;
+  height: auto;
+  width: 574px;
+  margin-left: 5%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* padding: 20px; */
+  border: 2px solid brown;
 }
 
 .design-selection,
@@ -81,37 +86,9 @@ p {
   flex-direction: column;
   width: 501px;
   border-radius: 20px;
-  /* margin-bottom: 10%; */
-  margin: 10px;
-  padding: 20px;
+  padding: 5%;
   background-color: var(--color-main);
   /* border: 2px solid yellow; */
-}
-
-/* .preamble {
-  border: 2px solid orange;
-  margin-bottom: 0px;
-
-  width: 843px;
-  background-color: var(--color-main);
-  border-bottom: 1px solid var(--color-main);
-  padding: 20px;
-  margin-left: 710px;
-} */
-
-#zen-supporting,
-.preamble {
-  /* background-color: var(--color-main);
-  width: 843px;
-  margin-top: 0px;
-  border-top: 1px solid var(--color-main);
-  border: 2px solid green;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 720px;
-  background-color: var(--color-main);
-  border-radius: 20px; */
 }
 
 .preamble,
@@ -120,7 +97,7 @@ p {
 .benefits,
 .requirements {
   /* margin: 0 0 2px 226px; */
-  background-color: var(--color-main);
+  /* background-color: var(--color-main); */
   /* border-radius: 20px; */
 
   width: 843px;
@@ -133,20 +110,21 @@ p {
   margin-left: 720px;
   background-color: var(--color-main);
   border-radius: 20px;
+  margin-bottom: 5%;
 }
 
 .requirements p:nth-child(6) {
- /* text-align: center; */
- /* background-position: 0px top; */
- /* display: block; */
- display: flex;
- justify-content: center;
- align-items: center;
- width: 1345px;
- height: 263px;
- /* margin: 0 0 0 -10px; */
- /* padding: 25px 80px 0px 80px; */
- border: 2px solid red;
+  /* text-align: center; */
+  /* background-position: 0px top; */
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1345px;
+  height: 263px;
+  /* margin: 0 0 0 -10px; */
+  /* padding: 25px 80px 0px 80px; */
+  border: 2px solid red;
 }
 
 footer {
