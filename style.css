@@ -4,6 +4,7 @@
   --color-background: #dadbf8;
   --color-main: #f9f4ff;
   --color-text: #4a186e;
+  --color-hr: #9d9bb3;
 }
 
 body {
@@ -68,7 +69,7 @@ a {
 }
 
 .sidebar {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   font-size: 28px;
   padding: 0px;
   position: absolute;
@@ -89,37 +90,45 @@ a {
 .design-selection ul,
 .design-archives ul,
 .zen-resources ul {
-  /* padding: 0 0 0 25px; */
   padding-left: 0;
   color: var(--color-text);
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
+
+/* .select::after {
+  color: transparent;
+} */
 
 .design-name {
   font-weight: bold;
+}
+
+.sidebar li a:first-child {
+  display: block;
 }
 
 .sidebar li {
   list-style: none;
   padding-left: 13%;
   position: relative;
-  border: 2px solid pink;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  
+  /* border: 2px solid pink; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-bottom: 5px solid var(--color-hr);
 }
 
 .sidebar li::before {
   content: "";
   position: absolute;
-  /* top: 0; */
-  left: 1%;
-  width: 45px;
+  top: 30%;
+  left: 0%;
+  width: 58px;
   height: 45px;
   background-image: url(images/flower2.png);
-  background-size: 70px 52px;
+  opacity: 0.7;
+  background-size: cover;
   background-repeat: no-repeat;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* background-color: blue; */
 }
 
@@ -135,32 +144,31 @@ a {
   /* border: 2px solid yellow; */
 }
 
-/* .preamble,
-.sidebar,
+.preamble,
 #zen-supporting {
-
-} */
+  /* border: 2px solid orange; */
+  width: 843px;
+  border-top: 1px solid var(--color-main);
+  padding: 20px;
+  margin-left: 720px;
+  background-color: var(--color-main);
+  border-radius: 20px;
+}
 
 .preamble,
 .explanation,
 .participation,
 .benefits,
 .requirements {
-  /* margin: 0 0 2px 226px; */
-  /* background-color: var(--color-main); */
-  /* border-radius: 20px; */
-
   width: 843px;
   margin-top: 0px;
-  border-top: 1px solid var(--color-main);
-  /* border: 2px solid green; */
-  padding: 20px;
+  /* border-top: 1px solid var(--color-main); */
+  /* padding: 20px; */
   display: flex;
   flex-direction: column;
-  margin-left: 720px;
-  background-color: var(--color-main);
-  border-radius: 20px;
-  margin-bottom: 5%;
+  /* margin-left: 720px; */
+  border-bottom: 20px solid var(--color-hr);
+  /* border: 2px solid green; */
 }
 
 .requirements p:nth-child(6) {
